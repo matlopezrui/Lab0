@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Vivienda, Municipio, Persona, DuenoVivienda
+from .models import Vivienda, Municipio, Persona
 from drf_writable_nested import WritableNestedModelSerializer
 
 
