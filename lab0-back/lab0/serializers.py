@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Vivienda, Municipio, Persona
+from .models import Vivienda, Municipio, Persona, DuenoVivienda
 from drf_writable_nested import WritableNestedModelSerializer
 
 
@@ -14,7 +14,7 @@ class ViviendaSerializer(WritableNestedModelSerializer, serializers.ModelSeriali
 
     class Meta:
         model = Vivienda
-        fields = ['id_vivienda', 'direccion', 'capacidad','pisos', 'municipio', 'personas_vivienda']
+        fields = ['id_vivienda', 'direccion', 'capacidad','pisos', 'municipio', 'dueno', 'personas_vivienda']
 
 
 class MunicipioSerializer(WritableNestedModelSerializer, serializers.ModelSerializer):
@@ -23,3 +23,5 @@ class MunicipioSerializer(WritableNestedModelSerializer, serializers.ModelSerial
     class Meta:
         model = Municipio
         fields = ['id_municipio', 'nombre_municipio', 'poblacion', 'area', 'viviendas']
+
+

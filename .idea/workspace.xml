@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c6fb8a0-9b6e-491e-a9e5-99b2eebfbf5d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lab0-back/lab0/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0-back/lab0/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0-back/lab0/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0-back/lab0/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0-back/lab0/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0-back/lab0/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0-back/lab0/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0-back/lab0/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0-back/lab0/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0-back/lab0/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab0-back/lab0/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab0-back/lab0/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="6c6fb8a0-9b6e-491e-a9e5-99b2eebfbf5d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

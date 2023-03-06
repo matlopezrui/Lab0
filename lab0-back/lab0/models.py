@@ -12,6 +12,7 @@ class Vivienda(models.Model):
     id_vivienda = models.CharField(max_length=50, primary_key=True)
     direccion = models.CharField(max_length=50)
     municipio = models.ForeignKey(Municipio, related_name='viviendas', on_delete=models.CASCADE)
+    dueno = models.ForeignKey('Persona', related_name='propiedades',null=True, blank=True, on_delete=models.CASCADE)
     capacidad = models.PositiveSmallIntegerField(default=1)
     pisos = models.PositiveSmallIntegerField(default=1)
 
@@ -32,3 +33,5 @@ class Persona(models.Model):
 
     def __str__(self):
         return self.nombre
+
+    
