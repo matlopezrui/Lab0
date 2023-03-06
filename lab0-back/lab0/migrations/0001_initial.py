@@ -5,7 +5,6 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -28,7 +27,8 @@ class Migration(migrations.Migration):
                 ('direccion', models.CharField(max_length=50)),
                 ('capacidad', models.PositiveSmallIntegerField(default=1)),
                 ('pisos', models.PositiveSmallIntegerField(default=1)),
-                ('municipio', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='viviendas', to='lab0.municipio')),
+                ('municipio', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='viviendas',
+                                                to='lab0.municipio')),
             ],
         ),
         migrations.CreateModel(
@@ -39,9 +39,13 @@ class Migration(migrations.Migration):
                 ('sexo', models.CharField(blank=True, max_length=50, null=True)),
                 ('telefono', models.IntegerField(blank=True, null=True)),
                 ('fecha_nacimiento', models.CharField(max_length=50)),
-                ('cabeza_familia', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, to='lab0.persona')),
-                ('municipio', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='personas_muni', to='lab0.municipio')),
-                ('residencia', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='personas_vivi', to='lab0.vivienda')),
+                ('cabeza_familia', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE,
+                                                     to='lab0.persona')),
+                ('municipio',
+                 models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='personas_muni',
+                                   to='lab0.municipio')),
+                ('residencia', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE,
+                                                 related_name='personas_vivi', to='lab0.vivienda')),
             ],
         ),
     ]
